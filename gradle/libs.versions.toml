@@ -1,0 +1,30 @@
+[versions]
+kotlin = "2.1.0"
+compose-multiplatform = "1.7.0"
+agp = "8.5.2"
+iconsLucide = "1.1.0"
+compose-unstyled = "1.20.0"
+materialRipple = "1.7.6"
+navigationCompose = "2.8.0-alpha10"
+addcoilmultiplatform = "3.0.0-rc01"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+androidx-activityCompose = "1.9.3"
+androidx-lifecycle = "2.8.3"
+
+[libraries]
+addcoilmultiplatform = { module = "com.alexstyl:addcoilmultiplatform", version.ref = "addcoilmultiplatform" }
+androidx-material-ripple = { module = "androidx.compose.material:material-ripple", version.ref = "materialRipple" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+compose-unstyled = { group = "com.composables", name = "core", version.ref = "compose-unstyled" }
+icons-lucide = { module = "com.composables:icons-lucide", version.ref = "iconsLucide" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
